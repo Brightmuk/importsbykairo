@@ -1,0 +1,88 @@
+.intro-hero{
+    background-image: url('images/audi-about-page.png');
+    height: 60vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.intro-hero .overlay{
+    height: 60vh;
+    width: 100vw;
+    background-color: rgb(27, 27, 27,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px;
+
+}
+.overlay #text{
+    bottom: 10vh;
+}
+#company-info{
+    
+}
+#company-info #description{
+    text-align: center;
+    margin:0 50px;
+}
+#company-info .values{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 70%;
+    padding-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+#company-info .values .quality,.reliability,.customer-support{
+    margin: 50px 0;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.29);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.43);
+    width: 200px;
+    padding: 20px;
+}
+.values img{
+    width: 70px;
+}
+.values p{
+   padding-top: 10px;
+    font-weight: 600
+}
+#company-info .mission-vision{
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 50px;
+   justify-content: space-between;
+}
+#company-info .vision, .mission{
+    width: 400px;
+}
+#company-info .image{
+    background-image: url('images/desk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    height: 30vh;
+}
+
+#company-info h2{
+    text-align: center;
+    padding: 20px 0;
+    color: rgb(39, 39, 39);
+    border-bottom: 1px solid rgb(233, 233, 233);
+}
+#company-info .mission-vision p{
+    padding-top: 50px;
+}
+
+
