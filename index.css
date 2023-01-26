@@ -294,8 +294,6 @@ input[type=range]::-webkit-slider-runnable-track  {
     color: rgb(0, 0, 0);
     font-weight: 300;
     
-  
-    
 }
 .process-row{
     margin-top: 100px;
@@ -376,22 +374,7 @@ img {vertical-align: middle; border-radius: 5px;}
 .button-row .btn i{
     font-size: 25px;
 }
-.process-right #payment1,#payment2,#payment3{
- width: 300px;
- position: absolute;
-}
-.img-cards{
-    position: relative;
-}
-.process-right #payment2{
-    top: 50px;
-    left: 200px;
-}
-.process-right #payment3{
-    top:0px;
-    left: 400px;
-    z-index: -1;
-}
+
 
 /* browse by brands section */
 
@@ -402,7 +385,7 @@ img {vertical-align: middle; border-radius: 5px;}
     
 }
 .brand-slideshow{
-    
+    height: 40vh;
     display: flex;
     width: 100vw;
     overflow-x: scroll;
@@ -416,7 +399,7 @@ img {vertical-align: middle; border-radius: 5px;}
 }
 .brand-slide{
     min-width: 250px;
-    height: 270px;
+    height: 280px;
     border: 1px solid rgb(219, 219, 219);
     border-radius: 10px;
     justify-content: center;
@@ -431,12 +414,10 @@ img {vertical-align: middle; border-radius: 5px;}
     backdrop-filter: blur(9.5px);
     -webkit-backdrop-filter: blur(9.5px);
     border: 1px solid rgba(255, 255, 255, 0.34);
-    
+    cursor: pointer;
 }
-.brand-slide img{
-    max-height: 240px;
-    width: auto;
-}
+
+
 
 .brand-slide .text{
     color: rgb(0, 0, 0);
@@ -447,6 +428,7 @@ img {vertical-align: middle; border-radius: 5px;}
     position: absolute;
     bottom: 0;
 }
+
 #footer{
     height: 40vh;
     width: 100%;
