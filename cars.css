@@ -1,0 +1,132 @@
+
+
+.dropdown .fa{
+    color:black;
+    margin-left: 5px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(245, 245, 245);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .intro-hero{
+    background-image: url('images/mercedes-port.png');
+    height: 60vh;
+    position: relative;
+
+}
+.intro-hero .overlay{
+    height: 60vh;
+    width: 100vw;
+  
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+
+}
+
+.intro-hero form{
+
+    height: 250px;
+    width: 80vw;
+    right: 0;
+    position: absolute;
+    bottom: -10vh;
+    left: 10vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: -2px 6px 56px -24px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 6px 56px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 6px 56px -24px rgba(0,0,0,0.75);
+}
+.overlay #text{
+    bottom: 30vh;
+    font-size: 40px;
+}
+.intro-hero form h2{
+    position:absolute;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 30px;
+}
+#cars{
+    height: 100vh;
+}
+.intro-hero form select{
+    border-radius: 5px;
+    border: 2px solid grey;
+    padding: 10px;
+    width: 230px;
+}
+.intro-hero form select:focus{
+    border: none;
+}
+.intro-hero form .form-content{
+   
+display: flex;
+justify-content: space-between;
+}
+.form-content .form-section{
+    margin-top: 80px;
+    width: 250px;
+    padding-left: 20px;
+}
+.form-content .price, .form-content .year{
+    width: 400px;
+    padding: 0 10px;
+}
+.range-values{
+    display: flex;
+    justify-content: space-between;
+
+}
+.range-values p{
+    font-size: 15px;
+}
+.form-content .buttons{
+    height: 250px;
+    width: 100px;
+}
+.form-content .buttons .filter-btn{
+    background-color: black;
+    color: white;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+    border-bottom-right-radius:20px ;
+}
+.form-content .buttons .reset-btn{
+    background-color: rgb(184, 184, 184);
+    color: rgb(250, 250, 250);
+    border-top-right-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+    height: 50%;
+}

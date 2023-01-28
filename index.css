@@ -106,6 +106,7 @@ nav .nav-items{
     border-radius: 5px;
 }
 nav .active{
+    padding-bottom: 5px;
     border-bottom: 2px solid black;
 }
 
@@ -156,6 +157,10 @@ nav .active{
 }
 .filter-form .form-content #amount{
     font-weight: 300;
+}
+.filter-form .form-content .label h5{
+    color: black;
+    font-weight: 500;
 }
 .slider {
     -webkit-appearance: none;
@@ -304,7 +309,7 @@ input[type=range]::-webkit-slider-runnable-track  {
     padding-bottom: 150px;
 }
 
-.process-left:nth-child(1){
+.process-left{
     width: 30vw;
     display: flex;
     justify-content: space-between;
@@ -312,22 +317,10 @@ input[type=range]::-webkit-slider-runnable-track  {
     height: 350px;
 
 }
-.process-right:nth-child(2){
+.process-right{
     width: 50vw;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 350px;
-
 }
-.process-left:nth-child(3){
-    width: 50vw;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 350px;
 
-}
 
 /* Slideshow container */
 .mySlides {display: none}

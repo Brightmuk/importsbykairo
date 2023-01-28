@@ -9,19 +9,12 @@
 .intro-hero .overlay{
     height: 60vh;
     width: 100vw;
-    background-color: rgb(27, 27, 27,0.5);
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 20px;
 
 }
 .overlay #text{
     bottom: 10vh;
 }
-#company-info{
-    
-}
+
 #company-info #description{
     text-align: center;
     margin:0 50px;
