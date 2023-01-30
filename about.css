@@ -1,13 +1,13 @@
 .intro-hero{
     background-image: url('images/audi-about-page.png');
-    height: 60vh;
+    height: 50vh;
     width: 100vw;
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
 }
 .intro-hero .overlay{
-    height: 60vh;
+    height: 50vh;
     width: 100vw;
 
 }

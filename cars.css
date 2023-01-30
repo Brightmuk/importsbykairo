@@ -1,34 +1,4 @@
 
-
-.dropdown .fa{
-    color:black;
-    margin-left: 5px;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: rgb(245, 245, 245);
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
   .intro-hero{
     background-image: url('images/mercedes-port.png');
     height: 60vh;
@@ -46,12 +16,11 @@
 }
 
 .intro-hero form{
-
-    height: 250px;
+    height: 25vh;
     width: 80vw;
     right: 0;
     position: absolute;
-    bottom: -10vh;
+    bottom: -12.4vh;
     left: 10vw;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
@@ -70,14 +39,13 @@
     text-align: left;
     font-size: 30px;
 }
-#cars{
-    height: 100vh;
-}
+
 .intro-hero form select{
     border-radius: 5px;
     border: 2px solid grey;
     padding: 10px;
     width: 230px;
+   
 }
 .intro-hero form select:focus{
     border: none;
@@ -97,6 +65,7 @@ justify-content: space-between;
     padding: 0 10px;
 }
 .range-values{
+    margin-top: 8px;
     display: flex;
     justify-content: space-between;
 
@@ -105,7 +74,7 @@ justify-content: space-between;
     font-size: 15px;
 }
 .form-content .buttons{
-    height: 250px;
+    height: 25vh;
     width: 100px;
 }
 .form-content .buttons .filter-btn{
@@ -118,6 +87,7 @@ justify-content: space-between;
     flex-direction: column;
     font-weight: 600;
     border-bottom-right-radius:20px ;
+    cursor: pointer;
 }
 .form-content .buttons .reset-btn{
     background-color: rgb(184, 184, 184);
@@ -129,4 +99,63 @@ justify-content: space-between;
     flex-direction: column;
     font-weight: 600;
     height: 50%;
+    cursor: pointer;
+}
+#cars{
+    margin: 0px 10vw;
+    margin-top: 150px;
+
+    
+}
+.cars-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.car-tile{
+    width: 350px;
+   border: 1px solid rgb(212, 212, 212);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.car-tile .tile-content{
+    padding: 20px;
+}
+.car-tile .tile-content .year{
+    background-color: rgb(241, 241, 241);
+    border-radius: 5px;
+    padding: 3px;
+}
+.car-tile .tile-image img{
+    width: 349px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    
+}
+.car-tile .features{
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+.car-tile .features .feature img{
+
+    width: 30px;
+}
+.car-tile .features .feature{
+    
+   text-align: center; 
+}
+.car-tile .features .feature p{
+    margin-top: 5px;
+    font-size: 15px;
+    color: rgb(71, 71, 71);
+}
+.car-tile .price{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
 }
