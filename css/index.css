@@ -11,6 +11,7 @@ h1{
 }
 section{
     padding-top: 50px;
+    width: 100%;
 }
 *{
     margin:0;
@@ -28,6 +29,7 @@ section{
 
 /* info nav styling*/
 .info-nav{
+    width: 100%;
     color: rgb(255, 255, 255);
     background-color: black;
     height: 30px;
@@ -39,9 +41,10 @@ section{
 }
 .info-nav p{
     color: white;
-    font-size: 15px;
+    font-size: 13px;
     padding-left: 10px;
     padding-right: 20px;
+    cursor: pointer;
     border-right: 1px solid rgb(85, 85, 85);
 }
 .info-nav .info-left i{
@@ -50,7 +53,7 @@ section{
 
 .info-left{
     display: flex;
-    width: 500px;
+    width: 50vw;
     font-size: 20px;
     color: white;
   
@@ -79,9 +82,14 @@ nav{
     z-index: 1;
     position: absolute;
     align-items: center;
-    
-    
 }
+nav .fa-bars{
+    font-size: 25px;
+    color: black;
+    display: none;
+    padding: 20px;
+}
+
 
 
 .dropdown .fa{
@@ -172,6 +180,7 @@ nav .active{
     right: 10vw;
     bottom: 10vh;
 }
+
 .intro-hero .filter-form h2{
     padding: 20px;
     text-align: center;
@@ -351,13 +360,15 @@ input[type=range]::-webkit-slider-runnable-track  {
 .process-right{
     width: 50vw;
 }
-
+.process-right img{
+    width: 100%;
+}
 
 /* Slideshow container */
 .mySlides {display: none}
 img {vertical-align: middle; border-radius: 5px;}
 .slideshow-container {
-    max-width: 40vw;
+    width: 40vw;
     position: relative;
     height: 400px;
     
@@ -480,30 +491,29 @@ img {vertical-align: middle; border-radius: 5px;}
 }
 #footer .column-nav{
     display: flex;
-   
     justify-content: space-between;
     flex-direction: column;
-    width: 200px;
+    width: 20vw;
     height: 100%;
     padding-bottom: 20px;
     border-right: 1px solid rgb(37, 37, 37);
 }
-.column-nav img{
+.column-nav #logo{
    border-radius: 1px;
+   width: 100%;
    
 }
 #footer .column-cars{
     padding: 20px;
     border-right: 1px solid rgb(31, 31, 31);
-    padding-right: 0;
-    
+    padding-right: 0; 
 }
 #footer .car-brands{
     flex-wrap: wrap;
     display: flex; 
 }
 #footer h3{
-    height: 50px;
+    height: 5vh;
    
 }
 #footer .car-brands p{
@@ -541,4 +551,107 @@ img {vertical-align: middle; border-radius: 5px;}
 }
 #endnote span{
     color: white;
+}
+
+/* Responsive styling */
+@media (max-width: 1200px){
+    .intro-hero .filter-form{
+        width: 40vw;
+        height: 65vh;
+        bottom: 10px;
+        left: 10vw;
+    }
+    .overlay #text{
+        position: absolute;
+        bottom: 30vh;
+        left: 8vw;
+        font-size: 45px;
+        padding-left: 25px;
+        border-left: 8px solid white;
+        height: 200px;
+
+    }
+    .overlay .values{
+        bottom: 20vh;
+        left: 8vw;
+        font-size: 18px;
+        width: 450px;
+    }
+    #footer  p{
+        padding-bottom: 5px;
+        font-size: 13px;
+    }
+    #footer .car-brands>* {
+        flex: 0 0 130px;
+    }
+    #footer{
+        height: 50vh;
+        padding: 20px 20px 0 20px;
+        
+    }
+
+}
+
+
+@media (max-width: 1050px){
+    .intro-hero .overlay .filter-form{
+        height: 40vh;
+        width: 70vw;
+    
+    }
+    .overlay #text{
+        
+        top: 20vh;
+        left: 10vw;
+        font-size: 50px;
+        color: white;
+        font-weight: 600;
+        padding-left: 20px;
+        border-left: 8px solid white;
+    }
+    .overlay .values{
+        position: absolute;
+        top: 40vh;
+        left: 10vw;
+        font-weight: 300;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 490px;
+    }
+    nav .nav-items{
+        display: none;
+    }
+    nav .fa-bars{
+        display: block;
+    }
+    @media (max-width: 900px){
+        #footer .column-nav{
+            display: none;
+        }
+        #process{
+            display: flex;
+          
+            justify-content: center;
+            flex-direction: column;
+        }
+        .process-row{
+            display: block;
+            width: 80vw;
+            margin: 50px;
+            height: auto;
+        }
+        .process-row .process-left, .process-right{
+            width: 100%;
+            height: auto;
+        }
+        .slideshow-container {
+            width: 100%;
+            position: relative;
+            height: auto;
+            
+          }
+   
+    }
+    
 }
