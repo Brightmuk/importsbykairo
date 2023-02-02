@@ -128,11 +128,23 @@ justify-content: space-between;
     border-radius: 5px;
     padding: 3px;
 }
+.car-tile .tile-image{
+    position: relative;
+}
 .car-tile .tile-image img{
     width: 349px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     
+}
+.car-tile .tile-image p{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 3px;
+   border-bottom-right-radius: 5px;
+   border-top-left-radius: 5px;
+    position: absolute;
+   top: 0;
 }
 .car-tile .features{
     display: flex;

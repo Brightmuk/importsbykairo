@@ -1,0 +1,182 @@
+#car{
+    height: 100vh;
+    padding-top: 150px;
+    
+}
+
+#car{
+margin: 0 10vw;
+
+}
+.car-details{
+    display: flex;
+    
+}
+#car .car-left{
+    
+    margin-right: 30px;
+}
+#car .car-right{
+    width: 30vw;
+
+}
+#car .car-right .availability{
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    background-color: rgb(58, 58, 58);
+}
+#car .car-right .feature{
+    display: flex;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+#car .car-right .feature .name{
+    color: grey;
+}
+#car .car-right .feature .value{
+    color: rgb(7, 7, 7);
+    font-weight: 600;
+}
+
+img {vertical-align: middle; border-radius: 5px;}
+.slideshow-container {
+    width: 70vh;
+    position: relative;
+  
+  }
+
+.car-right .price{
+    padding: 20px 0px;
+   
+}
+.car-right .price a,.car-right .price i{
+    color: rgb(82, 160, 250);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.car-left .car-images img{
+    height: 53vh;
+    width: 70vh;
+    border-radius: 5px;
+}
+.car-left .car-images{
+    width: 70vh;
+}
+.car-left .thumbnail-slide img{
+    width: 120px;
+    height: 92px;
+    border-radius: 2px;
+    
+}
+.splide__slide {
+    opacity: 0.6;
+  }
+  #thumbnail-carousel{
+      width: 70vh;
+      margin-top: 20px;
+  }
+  
+  .splide__slide.is-active {
+    opacity: 1;
+  }
+.specifications{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.specifications .spec{
+    padding: 10px;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgba(209, 209, 209, 0.3);
+    transition: 0.3s;
+}
+.specifications .spec:hover{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.specifications .spec img{
+    height: 30px;
+
+}
+.specifications .spec p{
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.share .fa-whatsapp{
+    color: rgb(27, 185, 27);
+    padding-right: 15px;
+    font-size: 22px;
+}
+.share .fa-facebook{
+    color: rgb(44, 105, 219);
+    padding-right: 15px;
+    font-size: 22px;
+}
+.share .fa-twitter{
+    padding-right: 15px;
+    color: rgb(104, 153, 245);
+    font-size: 25px;
+}
+
+.sidebar{
+    background-color: white;
+    margin-top: 100px;
+    height: 100vh;
+    width: 20vw;
+    position: absolute;
+    right:0;
+    transition: 0.5s;
+    box-shadow: -8px 2px 45px -34px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -8px 2px 45px -34px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 2px 45px -34px rgba(0,0,0,0.75);
+}
+.sidebar .header{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+.sidebar .specs p, h4{
+    padding: 10px;
+}
+.specs h4{
+
+    background-color: rgb(240, 240, 240);
+}
+.sidebar .specs li{
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-left:15px;
+    list-style-type: square;
+}
+.sidebar .fa-clear{
+    height: 20px;
+    cursor: pointer;
+}
+.sidebar-disabled{
+    right:-500px;
+    transition: 0.5s
+}
+
+.specs .hr{
+    padding: 5px 0;
+    
+}

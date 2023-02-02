@@ -144,7 +144,7 @@ nav .active{
 
 /* Into hero styling */
 .intro-hero{
-    background-image: url('images/audi.jpg');
+    background-image: url('../images/audi.jpg');
     height: 90vh;
     width: 100vw;
     background-repeat: no-repeat;
@@ -202,7 +202,7 @@ nav .active{
     outline: none;
     opacity: 1;
     -webkit-transition: 0.2s;
-    transition: opacity 0.2s;
+    transition:  0.2s;
 }
 input[type="range"] {
     -webkit-appearance: none;
@@ -366,8 +366,8 @@ img {vertical-align: middle; border-radius: 5px;}
   /* Caption text */
   .text {
     color: rgb(255,255,255,0.3);
-    font-size: 50px;
-   
+    font-size: 20px;
+   left:10px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -409,7 +409,7 @@ img {vertical-align: middle; border-radius: 5px;}
     
 }
 .brand-slideshow{
-    height: 40vh;
+    height: 45vh;
     display: flex;
     width: 100vw;
     overflow-x: scroll;
@@ -423,7 +423,7 @@ img {vertical-align: middle; border-radius: 5px;}
 }
 .brand-slide{
     min-width: 250px;
-    height: 280px;
+    height: 35vh;
     border: 1px solid rgb(219, 219, 219);
     border-radius: 10px;
     justify-content: center;

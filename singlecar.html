@@ -12,8 +12,8 @@
     https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     " rel="stylesheet"></link>
 
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="singlecar.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/singlecar.css">
     <script src="https://use.fontawesome.com/865859c31f.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
@@ -49,70 +49,181 @@
               </div>
               </div>
                <a href="/">Spare Parts</a>
-               <a href="/">Contact</a>
+             
                <a id="make-request" href="/">Make request</a>
             </div>
         </nav>
     </div>
+<div class="sidebar sidebar-disabled" id="performance-nav">
+    <div class="header">
+        <img class="fa-clear" src="images/icons/clear.png" alt="" onclick="closeSideNav('performance-nav')">
+        <h3>Performance</h3>
+        <div></div>
+
+    </div>
+    <div class="specs">
+        <li>2,000cc TFSI turbo engine</li> 
+
+        <li>220HP power output.</li> 
     
+        <li>Audi drive select.</li>
+    
+        <li>Auto start stop.</li>
+    
+        <li>8 Speed Automatic gearbox</li>
+    
+        <li>Quattro all wheel drive</li>
+    
+        <li>19 inch S Line alloys.</li>
+    
+        <li>S Line bumper styling.</li>
+    </div>
+
+</div> 
+<div class="sidebar sidebar-disabled" id="safety-nav">
+    <div class="header">
+        <img class="fa-clear" src="images/icons/clear.png" alt="" onclick="closeSideNav('safety-nav')">
+        <h3>Safety</h3>
+        <div></div>
+    </div>
+    <div class="specs">
+        <li>S Line bucket seats.</li> 
+
+        <li>Half leather, Half fabric trim.</li> 
+
+        <li>Thigh support.</li>
+
+        <li>Powered seat controls with memory.</li>
+
+        <li>Audi MMI infotainment system</li>
+
+        <li>Cruise control.</li>
+
+        <li>Dual zone airconditioning.</li>
+    </div>
+</div>   
+<div class="sidebar sidebar-disabled" id="comfort-nav">
+    <div class="header">
+        <img class="fa-clear" src="images/icons/clear.png" alt="" onclick="closeSideNav('comfort-nav')">
+        <h3>Comfort</h3>
+        <div></div>
+    </div>
+    <div class="specs">
+        <li>S Line bucket seats.</li> 
+
+        <li>Half leather, Half fabric trim.</li> 
+
+        <li>Thigh support.</li>
+
+        <li>Powered seat controls with memory.</li>
+
+        <li>Audi MMI infotainment system</li>
+
+        <li>Cruise control.</li>
+
+        <li>Dual zone airconditioning.</li>
+    </div>
+</div>   
+<div class="sidebar sidebar-disabled" id="cost-nav">
+    <div class="header">
+        <img class="fa-clear" src="images/icons/clear.png" alt="" onclick="closeSideNav('cost-nav')">
+        <h3>Running costs</h3>
+        <div></div>
+    </div>
+    <div class="specs">
+        
+        <h4>Insurance</h4>
+        <p class="hr">Comprehensive: <b>Kes 182000 p/a</b></p>
+        <br>
+        <h4>Fuel Consumption</h4>
+        <p class="hr">Highway: <b>13km/ltr</b></p>
+        <p class="hr">Urban: <b>13km/ltr</b></p>
+        <br>
+        <h4>Maintenance</h4>
+        <p class="hr"></p>
+        
+        <br>
+
+    </div>
+
+</div>     
 <section id="car">
     <div class="car-details">
-        <div class="car-left splide">
-            <div class="splide__track car-images">
-                <div class="splide__list ">
-        
-                    <div class="image-slide splide__slide">
-                      
-                      <img src="images/car/0.png" >
-                     
-                    </div>
-                    
-                    <div class="image-slide splide__slide">
-                      
-                      <img src="images/car/1.png" >
-                     
-                    </div>
-                    
-                    <div class="image-slide splide__slide">
-                      
-                      <img src="images/car/3.png" >
-                      
-                    </div> 
-                    <div class="image-slide splide__slide">
+        <div class="car-left">
+            <div id="main-carousel" class="splide">
+                <div class="splide__track car-images">
+                    <div class="splide__list ">
+            
+                        <div class="image-slide splide__slide">                      
+                            <img src="images/car/1.png" >                     
+                          </div>                    
+                          <div class="image-slide splide__slide">                      
+                            <img src="images/car/4.png" >                     
+                          </div>                   
+                          <div class="image-slide splide__slide">                      
+                            <img src="images/car/3.png" >                     
+                          </div> 
+                          <div class="image-slide splide__slide">                        
+                              <img src="images/car/5.png" >                       
+                            </div>
+                            <div class="image-slide splide__slide">                      
+                              <img src="images/car/7.png" >                        
+                            </div>
+                            <div class="image-slide splide__slide">                       
+                              <img src="images/car/8.png" >                        
+                            </div>
+                            <div class="image-slide splide__slide">                      
+                              <img src="images/car/9.png">                       
+                            </div>
+                            <div class="image-slide splide__slide">                      
+                              <img src="images/car/4.png" >                        
+                            </div> 
+                        </div>
                         
-                        <img src="images/car/5.png" >
+                        </div>
+            </div>
+            <div id="thumbnail-carousel" class="splide">
+                <div class="splide__track ">
+                    <div class="splide__list ">
+            
+                        <div class="thumbnail-slide splide__slide">                      
+                            <img src="images/car/1.png" >                     
+                          </div>                    
+                          <div class="thumbnail-slide splide__slide">                      
+                            <img src="images/car/4.png" >                     
+                          </div>                   
+                          <div class="thumbnail-slide splide__slide">                      
+                            <img src="images/car/3.png" >                     
+                          </div> 
+                          <div class="thumbnail-slide splide__slide">                        
+                              <img src="images/car/5.png" >                       
+                            </div>
+                            <div class="thumbnail-slide splide__slide">                      
+                              <img src="images/car/7.png" >                        
+                            </div>
+                            <div class="thumbnail-slide splide__slide">                       
+                              <img src="images/car/8.png" >                        
+                            </div>
+                            <div class="thumbnail-slide splide__slide">                      
+                              <img src="images/car/9.png">                       
+                            </div>
+                            <div class="thumbnail-slide splide__slide">                      
+                              <img src="images/car/4.png" >                        
+                            </div> 
+                        </div>
                         
-                      </div>
-                      <div class="image-slide splide__slide">
-                       
-                        <img src="images/car/7.png" >
-                        
-                      </div>
-                      <div class="image-slide splide__slide">
-                       
-                        <img src="images/car/8.png" >
-                        
-                      </div>
-                      <div class="image-slide splide__slide">
-                       
-                        <img src="images/car/9.png">
-                        
-                      </div>
-                      <div class="image-slide splide__slide">
-                       
-                        <img src="images/car/3.png" >
-                        
-                      </div>
+                        </div>
+            </div>
 
-                    
-                    </div>
-                    
-                    </div>
 
         </div>
         <div class="car-right">
             <h2>BMW 320i <span class="availability">In stock</span> </h2>
             <br>
+            <div class="feature">
+                <p class="name"> Mileage</p>
+                <p class="value">45,000</p>
+            </div>
             <div class="feature">
                 <p class="name"> Year</p>
                 <p class="value">2014</p>
@@ -137,8 +248,34 @@
                 <p class="name"> Body</p>
                 <p class="value">Sedan</p>
             </div>  
-            <div class="price">Ksh.3400000</div>
+            <div class="specifications">
+                <div class="spec" id="performance" onclick="openSideNav('performance-nav')">
+                    <img src="images/icons/performace.png" alt="">
+                    <p>Performance</p>
+                </div>
+                <div class="spec" id="safety" onclick="openSideNav('safety-nav')">
+                    <img src="images/icons/safety.png" alt="">
+                    <p>Safety</p>
+                </div>
+                <div class="spec" id="comfort" onclick="openSideNav('comfort-nav')">
+                    <img src="images/icons/comfort.png" alt="">
+                    <p>Comfort</p>
+                </div>
+                <div class="spec" id="cost" onclick="openSideNav('cost-nav')">
+                    <img src="images/icons/consts.png" alt="">
+                    <p>Running cost</p>
+                </div>
+            </div>
+            <div class="price">
             
+            <h2>Ksh.3,400,000</h2> <br>
+            <a>Apply for NCBA car finance <i class="fa fa-link"></i> </a>
+            <br>
+            <a>Loan calculator(interest and monthly repayments) <i class="fa fa-link"></i> </a>
+        </div>
+            
+            <div class="share"><i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i> <i class="fa fa-whatsapp"></i></div>
+        
         </div>
     </div>
 
@@ -151,7 +288,7 @@
             <a href="about.html"><h5>ABOUT</h5></a>
             <a href="cars.html"><h5>CARS</h5></a>
             <a><h5>SPARE PARTS</h5></a>
-           <a><h5>CONTACT</h5></a>
+           
         </div>
         <div class="column-cars">
             <h3>TOP CAR BRANDS</h3>
@@ -210,16 +347,35 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="index.js"></script>
+<script src="js/index.js"></script>
 <script>
-document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide', {
-    type    : 'loop',
-    perPage : 1,
-    autoplay: true,
-    autoWidth: true,
-    } );
-    splide.mount();
-    } );
+document.addEventListener( 'DOMContentLoaded', function () {
+  var main = new Splide( '#main-carousel', {
+    type      : 'fade',
+    rewind    : true,
+    pagination: false,
+    arrows    : false,
+  } );
+
+  var thumbnails = new Splide( '#thumbnail-carousel', {
+    fixedWidth  : 125,
+    fixedHeight : 97,
+    gap         : 5,
+    rewind      : true,
+    pagination  : false,
+    isNavigation: true,
+    breakpoints : {
+      600: {
+        fixedWidth : 60,
+        fixedHeight: 44,
+      },
+    },
+  } );
+
+  main.sync( thumbnails );
+  main.mount();
+  thumbnails.mount();
+} );
+    
 </script>
 </html>

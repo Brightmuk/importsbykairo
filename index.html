@@ -16,7 +16,7 @@
 
     <script src="https://use.fontawesome.com/865859c31f.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 <body> 
     <div class="header">
         <div class="info-nav">
@@ -38,11 +38,18 @@
         <nav id="nav">
             <img id="logo"src="images/logo.png" alt="">
             <div class="nav-items">
-               <a href="/" class="active">Home</a>
+               <a class="active"href="/" >Home</a>
                <a href="/about.html">About</a>
-               <a href="/cars.html">Cars</a>
+               <div class="dropdown">
+               <a href="" class="dropbtn">Cars <i class="fa fa-caret-down"></i></a>
+
+              <div class="dropdown-content">
+                <a href="/cars.html">Cars in Kenya</a>
+                <a href="/cars.html">Ready for Import</a>
+              </div>
+              </div>
                <a href="/">Spare Parts</a>
-               <a href="/">Contact</a>
+              
                <a id="make-request" href="/">Make request</a>
             </div>
         </nav>
@@ -300,7 +307,7 @@
             <a href="about.html"><h5>ABOUT</h5></a>
             <a href="cars.html"><h5>CARS</h5></a>
             <a><h5>SPARE PARTS</h5></a>
-           <a><h5>CONTACT</h5></a>
+          
         </div>
         <div class="column-cars">
             <h3>TOP CAR BRANDS</h3>
@@ -353,7 +360,7 @@
         © <span id="year"></span> Imports By Kairo. All Rights Reserved.
     </section>
 </body>
-<script src="index.js"></script>
+<script src="js/index.js"></script>
 <script>
 let slideIndex = 0;
 showSlides();

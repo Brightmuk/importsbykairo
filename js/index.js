@@ -38,4 +38,18 @@ document.getElementById('year').innerHTML = new Date().getFullYear();
 function scrollSlides() { 
     document.getElementsByClassName("brand-slideshow")[0].scrollTo(window.innerHeight,3000)
 }
+function closeSideNav(id){
+  
+    var navs = document.getElementsByClassName('sidebar');
+    for (var i=0;i<navs.length;i++){
+        navs[i].classList.add('sidebar-disabled');
+    }
+}
+function openSideNav(id){
+  var navs = document.getElementsByClassName('sidebar');
+  for (var i=0;i<navs.length;i++){
+      navs[i].classList.add('sidebar-disabled');
+  }
+    document.getElementById(id).classList.remove('sidebar-disabled');
+}
 

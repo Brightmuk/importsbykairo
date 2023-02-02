@@ -1,5 +1,5 @@
 .intro-hero{
-    background-image: url('images/audi-about-page.png');
+    background-image: url('../images/audi-about-page.png');
     height: 50vh;
     width: 100vw;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@
     width: 400px;
 }
 #company-info .image{
-    background-image: url('images/desk.jpg');
+    background-image: url('../images/desk.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; 
@@ -72,7 +72,7 @@
     text-align: center;
     padding: 20px 0;
     color: rgb(39, 39, 39);
-    border-bottom: 1px solid rgb(233, 233, 233);
+   
 }
 #company-info .mission-vision p{
     padding-top: 50px;
