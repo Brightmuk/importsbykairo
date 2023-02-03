@@ -36,7 +36,9 @@ section{
     padding-top: 5px;
     padding-left: 20px;
     padding-right: 20px;
+    position: relative;
     display: flex;
+    z-index: 10;
     justify-content: space-between;
 }
 .info-nav p{
@@ -83,14 +85,28 @@ nav{
     position: absolute;
     align-items: center;
 }
+#collapse-nav{
+    display: flex;
+    position:fixed;
+    flex-direction: column;
+    align-items: flex-start;
+    right: 0;
+    top: -500px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    padding-top: 150px;
+    height: auto;
+    transition: 0.1s ease;
+}
+#collapse-nav a{
+margin-bottom: 20px;
+}
 nav .fa-bars{
     font-size: 25px;
     color: black;
     display: none;
     padding: 20px;
 }
-
-
 
 .dropdown .fa{
     color:black;
@@ -433,7 +449,7 @@ img {vertical-align: middle; border-radius: 5px;}
     display: none;
 }
 .brand-slide{
-    min-width: 250px;
+    width: 35vh;
     height: 35vh;
     border: 1px solid rgb(219, 219, 219);
     border-radius: 10px;
@@ -476,6 +492,11 @@ img {vertical-align: middle; border-radius: 5px;}
 #footer h3{
     color: white;
     font-weight: 300;
+    padding-bottom: 10vh;
+
+}
+#footer h5{
+    margin-bottom: 2vh;
 }
 #footer p,h5,.fa{
     color: rgb(192, 192, 192);
@@ -490,9 +511,6 @@ img {vertical-align: middle; border-radius: 5px;}
     color: white;
 }
 #footer .column-nav{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
     width: 20vw;
     height: 100%;
     padding-bottom: 20px;
@@ -504,7 +522,7 @@ img {vertical-align: middle; border-radius: 5px;}
    
 }
 #footer .column-cars{
-    padding: 20px;
+    padding: 0 20px;
     border-right: 1px solid rgb(31, 31, 31);
     padding-right: 0; 
 }
@@ -525,7 +543,8 @@ img {vertical-align: middle; border-radius: 5px;}
 }
 
 #footer .column-info{
-    padding: 20px;
+    padding: 0 20px;
+  
 }
 .column-info p{
     padding-bottom: 20px;
@@ -556,48 +575,11 @@ img {vertical-align: middle; border-radius: 5px;}
 /* Responsive styling */
 @media (max-width: 1200px){
     .intro-hero .filter-form{
-        width: 40vw;
-        height: 65vh;
+
         bottom: 10px;
         left: 10vw;
-    }
-    .overlay #text{
-        position: absolute;
-        bottom: 30vh;
-        left: 8vw;
-        font-size: 45px;
-        padding-left: 25px;
-        border-left: 8px solid white;
-        height: 200px;
-
-    }
-    .overlay .values{
-        bottom: 20vh;
-        left: 8vw;
-        font-size: 18px;
-        width: 450px;
-    }
-    #footer  p{
-        padding-bottom: 5px;
-        font-size: 13px;
-    }
-    #footer .car-brands>* {
-        flex: 0 0 130px;
-    }
-    #footer{
-        height: 50vh;
-        padding: 20px 20px 0 20px;
-        
-    }
-
-}
-
-
-@media (max-width: 1050px){
-    .intro-hero .overlay .filter-form{
         height: 40vh;
         width: 70vw;
-    
     }
     .overlay #text{
         
@@ -608,6 +590,7 @@ img {vertical-align: middle; border-radius: 5px;}
         font-weight: 600;
         padding-left: 20px;
         border-left: 8px solid white;
+        height: 200px;
     }
     .overlay .values{
         position: absolute;
@@ -619,11 +602,37 @@ img {vertical-align: middle; border-radius: 5px;}
         justify-content: space-between;
         width: 490px;
     }
+    #footer  p{
+        padding-bottom: 5px;
+        font-size: 13px;
+    }
+    #footer .car-brands>* {
+        flex: 0 0 130px;
+    }
+    #footer{
+        height: 30vh;
+        padding: 20px 20px 0 20px;
+        
+    }
+
+}
+
+
+@media (max-width: 1050px){
+
+
     nav .nav-items{
         display: none;
     }
     nav .fa-bars{
         display: block;
+    }
+    .brand-slideshow{
+        height: 30vh;
+    }
+    .brand-slide{
+        width: 23vh;
+        height: 23vh;
     }
     @media (max-width: 900px){
         #footer .column-nav{
@@ -638,7 +647,7 @@ img {vertical-align: middle; border-radius: 5px;}
         .process-row{
             display: block;
             width: 80vw;
-            margin: 50px;
+            margin: 0 auto;
             height: auto;
         }
         .process-row .process-left, .process-right{
@@ -654,4 +663,7 @@ img {vertical-align: middle; border-radius: 5px;}
    
     }
     
+}
+@media (max-width: 800px){
+
 }

@@ -1,21 +1,22 @@
-
-
 const nav = document.getElementById('nav');
+var navOpen = false;
+
 
 window.addEventListener("scroll", event => {
+  reveal()
     if(window.scrollY>29){
         nav.classList.add("nav-fixed");
     }else{
         nav.classList.remove("nav-fixed");
-    
 }
-
- 
 }, { passive: true });
 
 
 
+
 function reveal() {
+  //On scroll the collapsed nav should always remain on top
+
     var reveals = document.querySelectorAll(".reveal");
   
     for (var i = 0; i < reveals.length; i++) {
@@ -29,9 +30,9 @@ function reveal() {
         reveals[i].classList.remove("active");
       }
     }
+    
   }
   
-window.addEventListener("scroll", reveal);
 
 document.getElementById('year').innerHTML = new Date().getFullYear();
 
@@ -51,5 +52,20 @@ function openSideNav(id){
       navs[i].classList.add('sidebar-disabled');
   }
     document.getElementById(id).classList.remove('sidebar-disabled');
+}
+
+var navBtn = document.getElementById('menu-btn');
+
+navBtn.addEventListener("click",toggleNav)
+
+function toggleNav(){
+  if(navOpen){
+    document.getElementById('collapse-nav').style.top="-500px";
+    navOpen=false;
+  }else{
+    navOpen=true;
+    console.log(window.scrollY)
+    document.getElementById('collapse-nav').style.top=`${window.scrollY}px`;
+  }
 }
 
