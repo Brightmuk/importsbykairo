@@ -64,8 +64,8 @@ function toggleNav(){
     navOpen=false;
   }else{
     navOpen=true;
-    console.log(window.scrollY)
-    document.getElementById('collapse-nav').style.top=`${window.scrollY}px`;
+    
+    document.getElementById('collapse-nav').style.top=`10px`;
   }
 }
 

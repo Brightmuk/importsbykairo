@@ -1,15 +1,16 @@
+
 #car{
     height: 100vh;
     padding-top: 150px;
-    
-}
-
-#car{
-margin: 0 10vw;
+    width: 90vw;
+    margin:auto;
 
 }
+
 .car-details{
     display: flex;
+    width: 80%;
+
     
 }
 #car .car-left{
@@ -17,7 +18,7 @@ margin: 0 10vw;
     margin-right: 30px;
 }
 #car .car-right{
-    width: 30vw;
+    width: 34vw;
 
 }
 #car .car-right .availability{
@@ -41,13 +42,6 @@ margin: 0 10vw;
     font-weight: 600;
 }
 
-img {vertical-align: middle; border-radius: 5px;}
-.slideshow-container {
-    width: 70vh;
-    position: relative;
-  
-  }
-
 .car-right .price{
     padding: 20px 0px;
    
@@ -59,12 +53,12 @@ img {vertical-align: middle; border-radius: 5px;}
 }
 
 .car-left .car-images img{
-    height: 53vh;
-    width: 70vh;
+    height: 50vh;
+    width: 65vh;
     border-radius: 5px;
 }
 .car-left .car-images{
-    width: 70vh;
+    width: 65vh;
 }
 .car-left .thumbnail-slide img{
     width: 120px;
@@ -76,7 +70,7 @@ img {vertical-align: middle; border-radius: 5px;}
     opacity: 0.6;
   }
   #thumbnail-carousel{
-      width: 70vh;
+      width: 65vh;
       margin-top: 20px;
   }
   
@@ -180,3 +174,6 @@ img {vertical-align: middle; border-radius: 5px;}
     padding: 5px 0;
     
 }
+
+
+

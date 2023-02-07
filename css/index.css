@@ -5,6 +5,9 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+body{
+    width: 100%;
+}
 h1{
     font-size: 50px;
     text-align: center;
@@ -190,6 +193,7 @@ nav .active{
 .intro-hero .filter-form{
     height: 60vh;
     width: 30vw;
+    min-height: 200px;
     background-color: white;
     border-radius: 20px;
     position: absolute;
@@ -214,9 +218,11 @@ nav .active{
 .filter-form .form-content #amount{
     font-weight: 300;
 }
-.filter-form .form-content .label h5{
+.filter-form .form-content .label{
     color: black;
     font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 .slider {
     -webkit-appearance: none;
@@ -411,6 +417,7 @@ img {vertical-align: middle; border-radius: 5px;}
 }
 .button-row{
     display: flex;
+    flex-wrap: wrap;
     
 }
 .button-row .btn {
@@ -574,33 +581,20 @@ img {vertical-align: middle; border-radius: 5px;}
 
 /* Responsive styling */
 @media (max-width: 1200px){
-    .intro-hero .filter-form{
+    .process-left{
+        width: 40vw;
+    }
 
-        bottom: 10px;
-        left: 10vw;
-        height: 40vh;
-        width: 70vw;
+    .intro-hero .filter-form{
+        width: 40vw;
     }
     .overlay #text{
-        
-        top: 20vh;
-        left: 10vw;
         font-size: 50px;
-        color: white;
-        font-weight: 600;
-        padding-left: 20px;
-        border-left: 8px solid white;
         height: 200px;
     }
     .overlay .values{
-        position: absolute;
-        top: 40vh;
-        left: 10vw;
-        font-weight: 300;
         font-size: 20px;
-        display: flex;
-        justify-content: space-between;
-        width: 490px;
+        width: 380px;
     }
     #footer  p{
         padding-bottom: 5px;
@@ -634,6 +628,15 @@ img {vertical-align: middle; border-radius: 5px;}
         width: 23vh;
         height: 23vh;
     }
+    .overlay #text{
+        font-size: 45px;
+        height: 200px;
+    }
+    .overlay .values{
+        font-size: 17px;
+        width: 360px;
+    }
+}
     @media (max-width: 900px){
         #footer .column-nav{
             display: none;
@@ -660,10 +663,132 @@ img {vertical-align: middle; border-radius: 5px;}
             height: auto;
             
           }
+        .overlay #text{
+            top:20vh;
+            font-size: 50px;
+            height: 200px;
+        }
+        .overlay .values{
+            top:40vh;
+            font-size: 20px;
+            width: 380px;
+        }
+        .intro-hero .filter-form{
+            bottom:-10px;
+            height: 40vh;
+            min-height: 450px;
+            left: 10vw;
+            width: 80vw;
+            overflow: scroll;
+        }
    
     }
     
-}
 @media (max-width: 800px){
+    .intro-hero .filter-form{
+        bottom:-10px;
+        left:5vw;
+        width: 90vw;
+    }
+    #footer .column-cars{
+        overflow: scroll;
+    }
+
+}
+@media (max-width: 550px){
+    .overlay #text{
+        font-size: 30px;
+        height: 120px;
+    }
+    .overlay .values{
+        width: 80vw;
+        top:38vh;
+        font-size: 15px;
+    }
+    .intro-hero .filter-form{
+        bottom:-10vh;
+        left:5vw;
+        width: 90vw;
+    }
+    .filter-form .form-content .label{
+        font-size: 14px;
+    }
+    .filter-form .form-content label{
+        font-size: 12px;
+    }
+    .button-row .btn {
+        display: flex;
+        padding: 10px;
+        border-radius: 5px;
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+    .button-row .btn p{
+        color: white;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .button-row .btn i{
+        font-size: 20px;
+    }
+    .brand-slideshow img {
+        width: 100px;
+    }
+
+    .brand-slideshow{
+        height: 35vh;
+        margin-bottom: 0;
+    }
+    h1{
+        font-size: 30px;
+    }
+    #process h1{
+        margin-top: 100px;
+    }
+    #footer{
+        height: 38vh;
+    }
+    #endnote{
+        font-size: 12px;
+    }
+    #footer .column-info{
+        padding: 0 10px;
+      
+    }
+    .column-info p{
+      
+        font-size: 12px;
+     
+    }
+    #footer .column-cars{
+        width: 90%;
+   
+        padding: 0;
+    }
+
+}
+@media (max-width: 380px){
+    .overlay #text{
+        font-size: 25px;
+        height: 100px;
+    }
+    .overlay .values{
+        width: 80vw;
+        top:38vh;
+        font-size: 15px;
+    }
+    .intro-hero .filter-form{
+        bottom:-19vh;
+        left:5vw;
+        height: 50vh;
+        width: 90vw;
+    }
+    .filter-form .form-content .label{
+        font-size: 14px;
+    }
+    .filter-form .form-content label{
+        font-size: 12px;
+    }
+
 
 }

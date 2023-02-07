@@ -29,6 +29,20 @@
                 <i class="fa fa-youtube-play" aria-hidden="true"></i>
             </div>
         </div>
+        <nav id="collapse-nav">
+        
+            <a href="/" >Home</a>
+            <a href="/about.html">About</a>
+            
+             <a class="active" href="/cars.html">Cars in Kenya</a>
+             <a href="/cars.html">Ready for Import</a>
+
+            <a href="/">Spare Parts</a>
+            <a id="make-request" href="/">Make request</a>
+            
+        
+         
+     </nav>
         <nav id="nav">
             <img id="logo"src="images/logo.png" alt="">
             <div class="nav-items">
@@ -46,6 +60,7 @@
                
                <a id="make-request" href="/">Make request</a>
             </div>
+            <i id="menu-btn" class="fa fa-bars"></i>
         </nav>
     </div>
     
@@ -57,52 +72,76 @@
             <form action="">
                 
                 <h2>Browse Cars</h2>
+
                 <div class="form-content">
-                 
-                    <div class="make form-section">
-                        <p>Car Make</p>
-                        <br>
-                        <select name="cars-models"  >
-                            <option value="" disabled selected>Choose</option>
-                              <option value="volvo">Mercedes-Benz</option>
-                              <option value="saab">Audi</option>
-                              <option value="saab">Porsche</option>
-                              <option value="saab">BMW</option>
-                              <option value="saab">Volkswagen</option>
-                          
-                            </select>
-                    </div>
-                    <div class="model form-section">
-                        <p>Car Model</p>
-                        <br>
-                        <select name="cars-models">
-                            <option value="" disabled selected>Choose</option>
-                              <option value="volvo">C200</option>
-                              <option value="saab">GLS 600</option>
-                              <option value="saab">CLK</option>
-                              <option value="saab">CLA</option>
-                              <option value="saab">A45</option>
-                          
-                            </select>
-                    </div>
-                    <div class="price  form-section">
-                        <p>Price range</p>
-                        <br>
-                        <input type="range" min="100000" max="100000000" value="40000000" class ="slider"id="price-range">
-                        <div class="range-values">
-                            <p>100000</p>
-                            <p>20000000</p>
+                    <div class="form-section-left">
+                        <div class="make form-section">
+                            <p>Car Make</p>
+                            
+                            <select name="cars-models"  >
+                                <option value="" disabled selected>Choose</option>
+                                  <option value="volvo">Mercedes-Benz</option>
+                                  <option value="saab">Audi</option>
+                                  <option value="saab">Porsche</option>
+                                  <option value="saab">BMW</option>
+                                  <option value="saab">Volkswagen</option>
+                              
+                                </select>
+                        </div>
+                        <div class="model form-section">
+                            <p>Car Model</p>
+                            
+                            <select name="cars-models">
+                                <option value="" disabled selected>Choose</option>
+                                  <option value="volvo">C200</option>
+                                  <option value="saab">GLS 600</option>
+                                  <option value="saab">CLK</option>
+                                  <option value="saab">CLA</option>
+                                  <option value="saab">A45</option>
+                              
+                                </select>
                         </div>
                     </div>
-                    <div class="year form-section">
-                        <p>Year</p>
-                        <br>
-                        <input type="range" min="1980" max="100000000" value="2023" class ="slider"id="year-range">
-                        <div class="range-values">
-                            <p>1990</p>
-                            <p>2023</p>
+
+                    <div class="form-section-right">
+                        <div class="year form-section">
+                            <p>Year</p>
+                            
+                            <div class="year-range">
+                                <select id="year-max" name="max-year">
+                                    <option value="" disabled selected>2004</option>
+                                      <option value="volvo">2004</option>
+                                      <option value="saab">2005</option>
+                                      <option value="saab">2006</option>
+                                      <option value="saab">2007</option>
+                                      <option value="saab">2008</option>
+                                  
+                                    </select>
+                                    <small>to</small>
+                                    <select id="year-max" name="min-year">
+                                        <option value="" disabled selected>2023</option>
+                                          <option value="volvo">2001</option>
+                                          <option value="saab">2002</option>
+                                          <option value="saab">2003</option>
+                                          <option value="saab">2004</option>
+                                          <option value="saab">2005</option>
+                                      
+                                        </select>
+                            </div>
+
+                        </div>
+                       
+                        <div class="price  form-section">
+                            <p>Price</p>
+                            
+                            <input type="range" min="100000" max="100000000" value="40000000" class ="slider"id="price-range">
+                            <div class="range-values">
+                                <p>100K</p>
+                                <p>2.0M</p>
+                            </div>
                         </div>
                     </div>
+
                     <div class="buttons">
                         <div class="reset-btn">Reset</div>
                         <div class="filter-btn">Filter</div>

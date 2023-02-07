@@ -3,7 +3,7 @@
     height: 50vh;
     width: 100vw;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
 }
 .intro-hero .overlay{

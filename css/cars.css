@@ -17,11 +17,11 @@
 
 .intro-hero form{
     height: 25vh;
-    width: 80vw;
-    right: 0;
+    width: 90vw;
     position: absolute;
     bottom: -12.4vh;
-    left: 10vw;
+    left:5vw;
+    padding-left: 15px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     box-shadow: -2px 6px 56px -24px rgba(0,0,0,0.75);
@@ -31,12 +31,10 @@
 .overlay #text{
     bottom: 30vh;
     font-size: 40px;
+    
 }
 .intro-hero form h2{
-    position:absolute;
-    padding-top: 20px;
-    padding-left: 20px;
-    text-align: left;
+    padding-top: 15px;
     font-size: 30px;
 }
 
@@ -44,26 +42,41 @@
     border-radius: 5px;
     border: 2px solid grey;
     padding: 10px;
-    width: 230px;
-   
+    width: 18vw;
+}
+.form-section p{
+    margin-bottom: 10px;
+}
+.form-section-right .year .year-range{
+    display: flex;
+    justify-content: space-between;
+}
+.intro-hero form #year-max, #year-min{
+    width: 8.5vw;
 }
 .intro-hero form select:focus{
     border: none;
 }
 .intro-hero form .form-content{
-   
 display: flex;
-justify-content: space-between;
+}
+.form-section-right,.form-section-left{
+    display: flex;
+    justify-content: space-between;
+
+}
+.form-content .form-section-right{
+    margin-right: 10px;
 }
 .form-content .form-section{
-    margin-top: 80px;
-    width: 250px;
-    padding-left: 20px;
+  
+    margin-top: 40px;
+    width: 19vw;
+    margin-right: 10px;
+
+    
 }
-.form-content .price, .form-content .year{
-    width: 400px;
-    padding: 0 10px;
-}
+
 .range-values{
     margin-top: 8px;
     display: flex;
@@ -73,14 +86,13 @@ justify-content: space-between;
 .range-values p{
     font-size: 15px;
 }
-.form-content .buttons{
-    height: 25vh;
-    width: 100px;
-}
+
 .form-content .buttons .filter-btn{
+    width: 100px;
+    position: absolute;
     background-color: black;
     color: white;
-    height: 50%;
+    height: 52%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -88,36 +100,45 @@ justify-content: space-between;
     font-weight: 600;
     border-bottom-right-radius:20px ;
     cursor: pointer;
+    bottom: 0;
+    right: 0;
 }
 .form-content .buttons .reset-btn{
+    width: 100px;
     background-color: rgb(184, 184, 184);
     color: rgb(250, 250, 250);
     border-top-right-radius: 20px;
     text-align: center;
     display: flex;
+    position: absolute;
     justify-content: center;
     flex-direction: column;
     font-weight: 600;
-    height: 50%;
+    height: 53%;
     cursor: pointer;
+    top: 0;
+    right: 0;
 }
 #cars{
-    margin: 0px 10vw;
+    
     margin-top: 150px;
-
+    width: 100%;
+    display: flex;
+    justify-content: center;
     
 }
 .cars-container{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    width: 95vw;
+   
     
 }
 .car-tile{
-    width: 350px;
+    width: 25vw;
    border: 1px solid rgb(212, 212, 212);
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin:3.3vw;
     cursor: pointer;
 }
 .car-tile .tile-content{
@@ -128,15 +149,17 @@ justify-content: space-between;
     border-radius: 5px;
     padding: 3px;
 }
+
 .car-tile .tile-image{
     position: relative;
 }
 .car-tile .tile-image img{
-    width: 349px;
+    width: 24.9vw;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     
 }
+
 .car-tile .tile-image p{
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
@@ -152,16 +175,14 @@ justify-content: space-between;
     justify-content: space-between;
 }
 .car-tile .features .feature img{
-
     width: 30px;
 }
 .car-tile .features .feature{
-    
    text-align: center; 
 }
 .car-tile .features .feature p{
     margin-top: 5px;
-    font-size: 15px;
+    font-size: 14px;
     color: rgb(71, 71, 71);
 }
 .car-tile .price{
@@ -170,4 +191,105 @@ justify-content: space-between;
     color: white;
     padding: 10px;
     font-weight: 600;
+}
+@media (max-width: 1050px){
+
+    .car-tile{
+        width: 40vw;
+        margin:3.5vw;
+    }
+    .car-tile .tile-image img{
+        width: 39.8vw;
+    }
+    .car-tile .features .feature p{
+       font-size: 12px; 
+     }
+     .form-content{
+         flex-direction: column;
+         width: 80%;
+     }
+
+     .intro-hero form{
+        height: 35vh;
+
+}
+    .form-content .form-section{
+        margin-top: 30px;
+        width: 40vw;
+    }
+    .form-content .form-section select{
+        width: 34vw;
+    }
+    .intro-hero form #year-max, #year-min{
+        width: 13vw;
+    }
+}
+@media (max-width: 600px){
+    .car-tile{
+        width: 94%;
+        margin:3.5vw;
+    }
+    .car-tile .tile-image img{
+        width: 100%;
+    }
+    .form-content .form-section select{
+        width: 30vw;
+    }
+    .intro-hero form #year-max, #year-min{
+        width: 16vw;
+    }
+}
+@media (max-width: 550px){
+    .form-section p{
+        font-size: 12px;
+    }
+    .intro-hero form{
+        height: 45vh;
+    }
+    .intro-hero form h2{
+        font-size: 22px;
+    }
+    .form-content{
+        width: 100%;
+    }
+    .form-content .form-section{
+        width: 45%;
+        
+    }
+    .form-section-right,.form-section-left{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    
+    }
+    .form-content .form-section select{
+        width: 100%;
+    }
+    .intro-hero form .price{
+        width:100%;
+    }
+    .intro-hero form #year-max, #year-min{
+        width: 45%;
+    }
+    .intro-hero form .year{
+        width:100%;
+        align-items: center;
+    }
+    .intro-hero form select{
+        border-radius: 4px;
+        border: 2px solid grey;
+        padding: 7px;
+    }
+    .form-content .buttons .reset-btn{
+        height: 40px;
+    }
+    .form-content .buttons .filter-btn{
+        height: 40px;
+    }
+}
+@media (max-width: 380px){
+    .intro-hero form{
+        height: 55vh;
+    }
 }
