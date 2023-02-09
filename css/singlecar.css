@@ -1,6 +1,5 @@
 
 #car{
-    height: 100vh;
     padding-top: 150px;
     width: 90vw;
     margin:auto;
@@ -53,17 +52,19 @@
 }
 
 .car-left .car-images img{
-    height: 50vh;
-    width: 65vh;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     border-radius: 5px;
 }
 .car-left .car-images{
     width: 65vh;
 }
 .car-left .thumbnail-slide img{
-    width: 120px;
-    height: 92px;
+    width: 100%;
+    height: 100%;
     border-radius: 2px;
+    object-fit: cover;
     
 }
 .splide__slide {
@@ -132,11 +133,12 @@
 
 .sidebar{
     background-color: white;
-    margin-top: 100px;
+    margin-top: 70px;
     height: 100vh;
     width: 20vw;
-    position: absolute;
+    position: fixed;
     right:0;
+    z-index: 1000;
     transition: 0.5s;
     box-shadow: -8px 2px 45px -34px rgba(0,0,0,0.75);
     -webkit-box-shadow: -8px 2px 45px -34px rgba(0,0,0,0.75);
@@ -166,7 +168,7 @@
     cursor: pointer;
 }
 .sidebar-disabled{
-    right:-500px;
+   right: -500px;
     transition: 0.5s
 }
 
@@ -174,6 +176,86 @@
     padding: 5px 0;
     
 }
+@media (max-width: 1050px){
+    .car-left .car-images img{
+        border-radius: 5px;
+    }
+    .car-left .car-images{
+        width: 60vh;
+    }
+    #thumbnail-carousel{
+        width: 60vh;
+        margin-top: 30px;
+    }
+    #car .car-right{
+        width: 36vw;
+    
+    }
 
+}
+@media (max-width: 900px){
+    .car-details{
+        margin:auto
+    }
+    .car-left .car-images img{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .car-left .car-images{
+        width: 100%;
+    }
+    #thumbnail-carousel{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .car-details{
+        display: flex;
+        flex-direction: column; 
+       
+        justify-content: center;
+    }.car-left{
+        width: 100%;
+        
+    }
+    #car .car-right{
+        margin-top: 20px;
+        width: 100%;
+       margin-bottom: 50px;
+    
+    }
+    .sidebar{
+        width: 50vw;
+        height: 100%;
+    
+    }
+}
+@media (max-width: 550px){
+    .car-left .thumbnail-slide img{
+        border-radius: 1px;
+        
+    }
 
+    .car-details{
+        width: 100%;
+    }
+    .sidebar{
+        width: 65vw;
+        border-radius: 2px;
+    }
+
+    .sidebar-disabled{
+        right: -500px;
+         transition: 0.5s
+     }
+     .specifications .spec{
+        padding: 5px;
+        width: 80px;
+        border-radius: 7px;
+    }
+    .specifications .spec p{
+        font-size: 11px;
+       
+    }
+}
 

@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/about.css">
     <script src="https://use.fontawesome.com/865859c31f.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet"></link>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <body> 
     <div class="header">
@@ -73,49 +80,70 @@
         </div>
     </div>
     <section id="company-info">
-        <h1>Who we are</h1>
-        <br><br>
-        <p id="description">Imports by Kairo is a car dealership that deals with Luxury car brands.<br> We sell vehicles and import
-             vehicles on behalf of our customers by our international team in Singapore,Japan & the UK.<br>We also import vehicle spare parts</p>
+        <div class="title">
+            <h2>Core principles</h2>
+        </div>
+        
+        <div class="cores">
+            <div class="core" id="quality">
+                <img src="images/quality.jpeg" alt="" class="src">
+                <div class="overlay">
+                    <h3>Quality</h3>
+                    <p>We provide  units carefully handpicked by our international team in Singapore,Japan & the UK</p>
+                </div>
+                
+             </div>
+             <div class="core" id="reliability">
+                <img src="images/reliability.jpg" alt="" class="src">
+                <div class="overlay">
+                    <h3>Reliability</h3>
+                    <p>We provide  units carefully handpicked by our international team in Singapore,Japan & the UK</p>
+                </div>
+                
+             </div>
+             <div class="core" id="customer-support">
+                <img src="images/customer.jpg" alt="" class="src">
+                <div class="overlay">
+                    <h3>Customer Service</h3>
+                    <p>We provide  units carefully handpicked by our international team in Singapore,Japan & the UK</p>
+                </div>
+                
+             </div>
+        </div>
+        <div class="mission-vision">
+            <div class="title">
+                <h2>Mission</h2>
+                
+            </div>
+            <div class="mission">
+                <div class="mission-text">
+                    <p >Our mission is to treat both customers and employees like guests in our 
+                        home and make certain our home is a place people want to be. We ensure 
+                        that every transaction is guided by the principals of honesty, integrity and 
+                        loyalty; and we set ourselves apart from other automotive retailers by having a 
+                        transparent, enjoyable and fair process in all of our business practices.</p>
+                </div>
 
-             <div class="values">
-                 
-                 <div class="quality">
-                    <img src="images/icons/qality.png" alt="" class="src">
-                    <p>Quality</p>
-                 </div>
-                 <div class="reliability">
-                    <img src="images/icons/reliability.png" alt="" class="src">
-                    <p>Reliability</p>
-                 </div>
-                 <div class="customer-support">
-                    <img src="images/icons/customer_support.png" alt="" class="src">
-                    <p>Customer Service</p>
-                 </div>
-                 
-             </div>
-             <div class="image"></div>
-             <div class="mission-vision">
-                <div class="mission">
+                    <img src="images/bentley.png" alt="">
+            </div>
+            <div class="title">
+                <h2>Vision</h2>
+                
+            </div>
+            <div class="vision">
+                <img src="images/s-class.jpeg" alt="">
+                <div class="vision-text">
+                    <p >Our mission is to treat both customers and employees like guests in our 
+                        home and make certain our home is a place people want to be. We ensure 
+                        that every transaction is guided by the principals of honesty, integrity and 
+                        loyalty; and we set ourselves apart from other automotive retailers by having a
+                        transparent, enjoyable and fair process in all of our business practices.</p>
+                </div>
+
                     
-                    <h2>MISSION</h2>
-                       <p>Our mission is to treat both customers and employees like guests in our <br>
-                           home and make certain our home is a place people want to be. We ensure <br>
-                           that every transaction is guided by the principals of honesty, integrity and <br>
-                           loyalty; and we set ourselves apart from other automotive retailers by having a <br>
-                           transparent, enjoyable and fair process in all of our business practices.</p>
-                    </div>
-    
-                   <div class="vision">
-                    <h2>VISION</h2>
-                   
-                      
-                       <p>Our vision is to be the best automotive company in Kenya, where customer expectations <br>
-                           are exceeded; employees are engaged; the community is served; and our business reputation <br>
-                           is infused with integrity and fun.</p>
-                       
-                   </div>
-             </div>
+            </div>
+        </div>
+
   
     </section>
     <section id="footer">
@@ -182,4 +210,17 @@
     </section>
 </body>
 <script src="js/index.js"></script>
+<script>
+    
+var splide = new Splide( '.splide', {
+  type    : 'loop',
+//   perPage : 1,
+  padding: '5rem',
+  autoplay: true,
+  fixedHeight:200,
+
+} );
+
+splide.mount();
+</script>
 </html>

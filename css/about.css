@@ -1,81 +1,161 @@
 .intro-hero{
-    background-image: url('../images/audi-about-page.png');
+    background-image: url('../images/about.png');
     height: 50vh;
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+  
 }
 .intro-hero .overlay{
     height: 50vh;
     width: 100vw;
 
 }
+
 .overlay #text{
     bottom: 10vh;
 }
+#company-info {
+    margin-bottom: 50px;
+    width: 100%;
 
-#company-info #description{
-    text-align: center;
-    margin:0 50px;
 }
-#company-info .values{
+.cores{
     display: flex;
-    justify-content: space-between;
-    margin: auto;
-    width: 70%;
-    padding-top: 50px;
-    text-align: center;
-    margin-bottom: 50px;
-    
+    justify-content: space-around;
 }
-#company-info .values .quality,.reliability,.customer-support{
-    margin: 50px 0;
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.29);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.5px);
-    -webkit-backdrop-filter: blur(6.5px);
-    border: 1px solid rgba(255, 255, 255, 0.43);
-    width: 200px;
+.core{
+    width: 25vw;
+    padding: 25px;
+    position: relative;
+    transition: 0.5s;
+}
+#company-info .title{
+    width: 100%;
+    height: 150px;
+    padding-left: 5vw;
+    margin-top: 10vh;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.core img{
+    height: 25vw;
+    width: 25vw;
+    object-fit: cover;
+
+}
+.core .overlay{
     padding: 20px;
-}
-.values img{
-    width: 70px;
-}
-.values p{
-   padding-top: 10px;
-    font-weight: 600
-}
-#company-info .mission-vision{
-    margin: auto;
-    width: 70%;
-    padding: 10px;
-    margin-top: 50px;
+    position: absolute;
+    height: 25.5vw;
+    width: 25vw;
+    margin-top: 20px;
+    border-radius: 5px;
+    top: 0;
     display: flex;
-    margin-bottom: 50px;
-   justify-content: space-between;
+    flex-direction: column;
+    justify-content: end;
+    transition: 0.5s;
+    background-image: linear-gradient(rgb(247, 247, 247,0.1), rgb(12, 12, 12,0.9));
 }
-#company-info .vision, .mission{
-    width: 400px;
+.core h3{
+   padding-bottom: 5px;
+    font-weight: 600;
+    color: rgb(240, 240, 240);
+    bottom: 100px;
+    left: 10px;
 }
-#company-info .image{
-    background-image: url('../images/desk.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; 
-    height: 30vh;
+.core p{
+
+     color: rgb(240, 240, 240);
+     
+     bottom: 40px;
+     left: 10px;
+     right: 10px;
+     font-weight: 300;
+ }
+#company-info .mission-vision{
+    margin:auto;
+    width: 80vw;
 }
 
 #company-info h2{
-    text-align: center;
     padding: 20px 0;
-    color: rgb(39, 39, 39);
-   
 }
-#company-info .mission-vision p{
-    padding-top: 50px;
+
+.mission,.vision {
+    display: flex;
+    justify-content: center;
+    height: 40vh;
 }
+.vision-text p,.mission-text p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.mission .mission-text,.vision .vision-text{
+    padding: 20px;
+    width: 30vw;
+    height: 40vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media (max-width: 900px){
+    .cores{
+        width: 30vw;
+        padding: 30px;
+    }
+    
+    .cores img{
+        height: 30vw;
+        width: 30vw;
+    
+    }
+    .cores .overlay{
+        padding: 20px;
+        position: absolute;
+        height: 31vw;
+        width: 30vw;
+        margin-top: 20px;
+
+    }
+}
+@media (max-width: 650px){
+    #company-info {
+        height: auto;
+        display: block;
+    }
+    .cores{
+        width: 100%;
+        padding: 30px;
+    }
+    
+    .cores img{
+        height: 100%;
+        width: 100%;
+    
+    }
+    .cores .overlay{
+        border: 1px solid red;
+        background-color: rgb(21, 29, 21,0.5);
+        padding: 20px;
+        position: absolute;
+        height: 90%;
+        width: 91%;
+        /* margin-top: 20px; */
+
+    }
+}
+
 
 

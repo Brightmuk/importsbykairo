@@ -58,7 +58,7 @@ section{
 
 .info-left{
     display: flex;
-    width: 50vw;
+    width: auto;
     font-size: 20px;
     color: white;
   
@@ -192,8 +192,9 @@ nav .active{
 /* form styling */
 .intro-hero .filter-form{
     height: 60vh;
+    min-height: 450px;
     width: 30vw;
-    min-height: 200px;
+
     background-color: white;
     border-radius: 20px;
     position: absolute;
@@ -380,21 +381,22 @@ input[type=range]::-webkit-slider-runnable-track  {
 
 }
 .process-right{
-    width: 50vw;
+    width: 40vw;
 }
 .process-right img{
     width: 100%;
 }
 
 /* Slideshow container */
-.mySlides {display: none}
-img {vertical-align: middle; border-radius: 5px;}
-.slideshow-container {
-    width: 40vw;
-    position: relative;
-    height: 400px;
+
+#car-splide .splide__slide img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
     
-  }
+}
+img {vertical-align: middle; border-radius: 5px;}
+
 
   /* Caption text */
   .text {
@@ -489,6 +491,7 @@ img {vertical-align: middle; border-radius: 5px;}
 
 #footer{
     height: 40vh;
+    min-height: 320px;
     width: 100%;
     background-color: black;
     padding: 50px 50px 0 50px;
@@ -605,6 +608,7 @@ img {vertical-align: middle; border-radius: 5px;}
     }
     #footer{
         height: 30vh;
+
         padding: 20px 20px 0 20px;
         
     }
@@ -696,6 +700,16 @@ img {vertical-align: middle; border-radius: 5px;}
 
 }
 @media (max-width: 550px){
+    .info-nav .info-right{
+        display: none;
+    }
+    .info-left{
+        width: 100%;
+        
+    }
+    .info-left p{
+        font-size: 10px;
+    }
     .overlay #text{
         font-size: 30px;
         height: 120px;
@@ -746,7 +760,7 @@ img {vertical-align: middle; border-radius: 5px;}
         margin-top: 100px;
     }
     #footer{
-        height: 38vh;
+        height: 30vh;
     }
     #endnote{
         font-size: 12px;

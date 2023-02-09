@@ -154,38 +154,39 @@
                     </div>
                     <br>
             </div>
-            <div class="process-right ">
-                <div class="slideshow-container">
+            <div id="car-splide" class="process-right splide">
+                <div class="splide__track">
+                <div class="slideshow-container splide__list">
 
-                    <div class="mySlides fade">
+                    <div class=" splide__slide">
                       
                       <img src="images/carousel/audi.jpeg" style="width:100%">
                       <div class="text">Audi</div>
                     </div>
                     
-                    <div class="mySlides fade">
+                    <div class=" splide__slide">
                       
                       <img src="images/carousel/bmw.jpeg" style="width:100%">
                       <div class="text">BMW</div>
                     </div>
                     
-                    <div class="mySlides fade">
+                    <div class=" splide__slide">
                       
                       <img src="images/carousel/jeep.jpeg" style="width:100%">
                       <div class="text">Jeep</div>
                     </div>
-                    <div class="mySlides fade">
+                    <div class=" splide__slide">
                         
                         <img src="images/carousel/rangerover.jpeg" style="width:100%">
                         <div class="text">Land Rover</div>
                       </div>
-                      <div class="mySlides fade">
+                      <div class="mySlides splide__slide">
                        
                         <img src="images/carousel/merc.jpeg" style="width:100%">
                         <div class="text">Mercedes</div>
                       </div>
                     
-                    
+                    </div>
                     </div>
             </div>
         </div>
@@ -378,30 +379,22 @@
 </body>
 <script src="js/index.js"></script>
 <script>
-let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    
-    slides[slideIndex-1].style.display = "block";  
-    
-    setTimeout(showSlides, 3000);
-}
     document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide', {
+    var splide1 = new Splide( '#car-splide', {
+    type    : 'loop',
+    perPage : 1,
+    autoplay: true,
+  
+    } );
+    var splide2 = new Splide( '#brands', {
     type    : 'loop',
     perPage : 3,
     autoplay: true,
     autoWidth: true,
     } );
-    splide.mount();
+    splide1.mount();
+    splide2.mount();
     } );
 </script>
 </html>
