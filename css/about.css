@@ -88,7 +88,7 @@
 
 .mission,.vision {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     height: 40vh;
 }
 .vision-text p,.mission-text p{

@@ -110,7 +110,9 @@ nav .fa-bars{
     display: none;
     padding: 20px;
 }
-
+.dropdown{
+    cursor: pointer;
+}
 .dropdown .fa{
     color:black;
     margin-left: 5px;
@@ -201,7 +203,9 @@ nav .active{
     right: 10vw;
     bottom: 10vh;
 }
-
+.intro-hero .filter-form h4{
+    font-weight: 500;
+}
 .intro-hero .filter-form h2{
     padding: 20px;
     text-align: center;
@@ -336,10 +340,10 @@ input[type=range]::-webkit-slider-runnable-track  {
 .number{
     background-color: black;
     color: white;
-    border-radius: 50px;
-    padding: 5px 8px;
+    border-radius: 100%;
+    padding: 5px 10px;
     font-size: 15px;
-    padding-bottom: 1px;
+    /* padding-bottom: 1px; */
 }
 .select-button{
     padding: 20px;
@@ -527,8 +531,8 @@ img {vertical-align: middle; border-radius: 5px;}
     border-right: 1px solid rgb(37, 37, 37);
 }
 .column-nav #logo{
-   border-radius: 1px;
-   width: 100%;
+
+   width: 90%;
    
 }
 #footer .column-cars{

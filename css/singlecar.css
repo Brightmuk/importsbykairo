@@ -3,7 +3,7 @@
     padding-top: 150px;
     width: 90vw;
     margin:auto;
-
+    padding-bottom: 20px;
 }
 
 .car-details{
@@ -158,10 +158,13 @@
     background-color: rgb(240, 240, 240);
 }
 .sidebar .specs li{
-    margin-bottom: 10px;
-    padding: 10px;
+    padding: 15px;
     padding-left:15px;
-    list-style-type: square;
+    list-style: none;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+.sidebar .specs li:nth-child(even){
+    background-color: rgb(245, 245, 245);
 }
 .sidebar .fa-clear{
     height: 20px;
@@ -176,6 +179,67 @@
     padding: 5px 0;
     
 }
+#more-cars{
+    padding: 2vw;
+}
+#more-cars .title{
+   
+    margin:3vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+#review{
+    padding: 5vw;
+    margin-top: 5vh;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    border-top: 1px solid rgb(233, 233, 233);
+    padding-bottom: 20px;
+}
+#review .review-content{
+    display: flex;
+
+}
+#review .review-content iframe{
+    width: 500px;
+   height: 350px;
+   
+   
+}
+#review .review-content .review-descrption{
+    width:65vh;
+    align-self: center;
+    height: 500px;
+    margin-right: 4vw;
+}
+#review .review-content .review-descrption .share{
+    height: auto;
+    border: 1px solid rgb(228, 228, 228);
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.19);
+}
+.review-descrption .share .fa{
+    border-radius: 50px;
+    margin-right: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.19);
+
+}
+
+#more-cars .more h3,#more-cars .more i{
+    color:rgb(100, 146, 247);
+    cursor: pointer;
+}
+
+
 @media (max-width: 1050px){
     .car-left .car-images img{
         border-radius: 5px;
