@@ -318,6 +318,15 @@ input[type=range]::-webkit-slider-runnable-track  {
 }
 .overlay li{
     color: white;
+    list-style: none;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.9px);
+    border: 1px solid rgba(255, 255, 255, 0.34);
 }
 
 /* process section */
@@ -783,6 +792,12 @@ img {vertical-align: middle; border-radius: 5px;}
    
         padding: 0;
     }
+    .reveal{
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 0.6s all ease;
+      }
+      
 
 }
 @media (max-width: 380px){
@@ -808,5 +823,8 @@ img {vertical-align: middle; border-radius: 5px;}
         font-size: 12px;
     }
 
+
+}
+.reveal{
 
 }

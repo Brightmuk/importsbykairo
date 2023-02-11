@@ -12,7 +12,21 @@
     width: 100vw;
 
 }
-
+.intro-hero .about-text{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    padding: 15px;
+    padding-left: 10vw;;
+    height: 5vh;
+    width: 100%;
+    left:0;
+    background: rgba(214, 214, 214, 0.31);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+    border: 1px solid rgba(255, 255, 255, 0.19);
+}
 .overlay #text{
     bottom: 10vh;
 }
@@ -125,6 +139,9 @@
 
 }
 @media (max-width: 650px){
+    .intro-hero .about-text{
+        height: 11.5vh;
+    }
     .cores{
         flex-wrap: wrap;
     }
@@ -145,6 +162,10 @@
     .mission .mission-text, .vision .vision-text{
         padding: 20px;
         width: 100vw;
+    }
+    section h2{
+        font-size: 25px;
+        padding: 0;
     }
 }
 @media (max-width: 400px){
