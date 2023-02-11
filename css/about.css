@@ -27,10 +27,23 @@
 }
 .core{
     width: 25vw;
-    padding: 25px;
-    position: relative;
+    height: 25vw;
+    background-repeat: no-repeat;
+    background-size: cover;
     transition: 0.5s;
+    border-radius: 5px;
 }
+.core .overlay{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+     border-radius: 5px;
+     display: flex;
+     flex-direction: column;
+     justify-content: end;
+     transition: 0.5s;
+     background-image: linear-gradient(rgb(247, 247, 247,0.1), rgb(12, 12, 12,0.9));
+ }
 #company-info .title{
     width: 100%;
     height: 150px;
@@ -41,121 +54,117 @@
 }
 
 
-.core img{
-    height: 25vw;
-    width: 25vw;
-    object-fit: cover;
-
-}
-.core .overlay{
-    padding: 20px;
-    position: absolute;
-    height: 25.5vw;
-    width: 25vw;
-    margin-top: 20px;
-    border-radius: 5px;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    transition: 0.5s;
-    background-image: linear-gradient(rgb(247, 247, 247,0.1), rgb(12, 12, 12,0.9));
-}
 .core h3{
    padding-bottom: 5px;
     font-weight: 600;
     color: rgb(240, 240, 240);
-    bottom: 100px;
-    left: 10px;
 }
 .core p{
-
      color: rgb(240, 240, 240);
-     
-     bottom: 40px;
-     left: 10px;
-     right: 10px;
      font-weight: 300;
  }
 #company-info .mission-vision{
     margin:auto;
-    width: 80vw;
+    
 }
 
 #company-info h2{
     padding: 20px 0;
 }
-
-.mission,.vision {
+.mission{
+    height: 400px;
+    background-image: url('../images/audi-steering.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    justify-content: space-around;
-    height: 40vh;
+    justify-content: end;
+    
 }
-.vision-text p,.mission-text p{
+.vision{
+    height: 400px;
+    background-image: url('../images/audi-rear.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    background-position: right;
+    justify-content: start;
+    
+}
+
+.mission-vision p{
     font-size: 20px;
     font-weight: 300;
-}
-.mission .mission-text,.vision .vision-text{
+    color: white;
+} 
+.mission .mission-text, .vision .vision-text{
     padding: 20px;
-    width: 30vw;
-    height: 40vh;
+    width: 50vw;
+    
     justify-content: center;
     display: flex;
     flex-direction: column;
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
+    background: rgba(126, 126, 126, 0.5);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 100%;
+    
 }
-@media (max-width: 900px){
-    .cores{
-        width: 30vw;
-        padding: 30px;
-    }
-    
-    .cores img{
-        height: 30vw;
-        width: 30vw;
-    
-    }
-    .cores .overlay{
-        padding: 20px;
-        position: absolute;
-        height: 31vw;
-        width: 30vw;
-        margin-top: 20px;
 
+@media (max-width: 850px){
+    .core{
+        width: 30vw;
+        height: 30vw;
+        border-radius: 5px;
     }
+    .core .overlay{
+        padding: 15px;
+
+     }
+
 }
 @media (max-width: 650px){
+    .cores{
+        flex-wrap: wrap;
+    }
+    .core{
+        width: 70%;
+        height: 50vw;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .core .overlay{
+        padding: 15px;
+
+     }
     #company-info {
         height: auto;
         display: block;
     }
-    .cores{
-        width: 100%;
-        padding: 30px;
-    }
-    
-    .cores img{
-        height: 100%;
-        width: 100%;
-    
-    }
-    .cores .overlay{
-        border: 1px solid red;
-        background-color: rgb(21, 29, 21,0.5);
+    .mission .mission-text, .vision .vision-text{
         padding: 20px;
-        position: absolute;
-        height: 90%;
-        width: 91%;
-        /* margin-top: 20px; */
-
+        width: 100vw;
     }
 }
-
+@media (max-width: 400px){
+    .cores{
+        margin: auto;
+        width: 100%;
+    }
+    .core{
+        width: 90%;
+        margin: auto;
+        height: 70vw;
+        border-radius: 3px;
+        margin-bottom: 20px;
+    }
+    .mission{
+        height: 300px;
+    }
+    .vision{
+        height: 300px;
+}
+}
 
 
