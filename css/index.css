@@ -315,6 +315,7 @@ input[type=range]::-webkit-slider-runnable-track  {
     display: flex;
     justify-content: space-between;
     width: 490px;
+    height: 30px;
 }
 .overlay li{
     color: white;
@@ -611,6 +612,9 @@ img {vertical-align: middle; border-radius: 5px;}
     .overlay .values{
         font-size: 20px;
         width: 380px;
+    }
+    .overlay #text{
+        width: 2vw;
     }
     #footer  p{
         padding-bottom: 5px;
